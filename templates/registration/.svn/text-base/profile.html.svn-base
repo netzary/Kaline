@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div id="static">
+	<div class="left">
+		<div class="header-4">
+		{% if user.is_authenticated %}
+    	<h2>Welcome, {{ user.username }}</h2>    
+    	</div>
+    
+    	If you want to change your password, please use this <a  href = "/accounts/password/change" > Link here</a> 
+	</div>
+</div>
+	
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Add  Group </h1>
+<p> Be very careful when you add Users</p>
+    </div>
+    
+
+{% if form.errors %} 
+<p class="error"> Please correct the errors below:
+{{ form.non_field_errors }}</p>
+{% endif %}
+    <form enctype="multipart/form-data" method="post" action="">{% csrf_token %} <dl>
+{% for field in form %}
+    <dt>{{ field.label_tag }}{% if field.field.required %}*{% endif %}</dt>
+    <br><dd>{{ field }}</dd>
+    {% if field.help_text %}<dd>{{ field.help_text }} </dd><br>{% endif %}
+    {% if field.errors %}<dd class="myerrors">{{ field.errors }}</dd>{% endif %}
+{% endfor %}
+</dl>
+<input type="submit" />
+</form>
+</p>
+
+</div>
+    </div>
+</div>
+{% endblock %}

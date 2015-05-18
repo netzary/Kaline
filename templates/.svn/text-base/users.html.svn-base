@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load endless %} 
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>User Name</th>
+        <th>Delete</th>
+       <th>Change Password</th>
+      </tr>
+    </thead>
+    <tbody>
+{% paginate object_list %}	
+{% for object in object_list %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ object.username }}</td>
+      
+      <td><a href ="/users/delete/{{ object.username }}/">Delete </a></td>
+     <td><a href ="/change_password/{{ object.username }}/">Change Password </a></td>
+         
+      </tr>
+      {% endfor %}
+      
+      
+        </tbody>
+  </table>
+
+{% show_pages %}
+{% endblock %}

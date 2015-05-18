@@ -1,0 +1,63 @@
+
+{% extends "base.html" %}
+{% block title %}Sign up{% endblock %}
+
+{% block ajax %}
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+     $(document).ready(function(){
+     var input =$('input#id_username')
+       $(".valid").click(function(event){
+         $('span#msg').load('/check_username/?username=' + input.val() );
+         event.preventDefault();
+       });
+     });
+     
+   </script>
+   
+   {% endblock %} 
+{% block content %}
+
+
+	
+			<h2>Why Register?</h2>
+		
+		<p>Before you apply for any course at our instituite you need to register as a user at this web site. The process takes less than 30 seconds, all you need is a valid email id!
+			
+
+
+
+<h2>Welcome to Recoup</h2>
+	
+	
+		
+	<p><b>Signing up is easy and takes 20 seconds</b></p>
+	
+	{% if form.errors %}
+	<p class="error">Please correct the errors below:
+	
+{{ form.non_field_errors }}</p>
+	{% endif %}
+
+	<form method="post" action="">{% csrf_token %}
+	<dl>
+	<dt><label for="id_username">Username</label>{% if form.username.errors %}<br /><span class="error">{{ form.username.errors|join:", " }}</span>{% endif %}</dt>
+	<dd>{{ form.username }}    <a href="/check_username/" class="valid"> Check validity </a>
+	<span id="msg"> </span></dd>  
+	
+	
+	<dt><label for="id_email">Email</label>{% if form.email.errors %}<br /><span class="error">{{ form.email.errors|join:", " }}</span>{% endif %}</dd>
+	<dd>{{ form.email }}</dd>
+	<dt><label for="id_password1">Password</label>{% if form.password1.errors %}<br /><span class="error">{{ form.password2.errors|join:", " }}</span>{% endif %}</dt>
+	<dd>{{ form.password1 }}</dd>
+	<dt><label for="id_password2">Password Again</label>{% if form.password2.errors %}<br /><span class="error">{{ form.password2.errors|join:", " }}</span>{% endif %}</dt>
+	<dd>{{ form.password2 }}</dd>
+	<dt><label for="id_tos">Registration implies your agreement with the <a href="/terms/conditions/">Terms of Service</a>.</label></dt>
+	<dt><input type="submit" value="Register" /></dt>
+	</dl>
+	</form>
+	
+{% endblock %}
+
+

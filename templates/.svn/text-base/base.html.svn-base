@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="no-js">
+    
+    <head>
+        <title>Admin Home Page</title>
+        <!-- Bootstrap -->
+        <link href="{{ STATIC_URL }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="{{ STATIC_URL }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="{{ STATIC_URL }}/vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="{{ STATIC_URL }}/assets/styles.css" rel="stylesheet" media="screen">
+          <script src="{{ STATIC_URL }}/vendors/jquery-1.9.1.min.js"></script>
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="{{ STATIC_URL }}/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+        
+        
+{% block ajax %}
+
+
+{% endblock %}
+    </head>
+    
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Admin Panel</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i>
+                                {% if user.is_authenticated %} {{ user.username }} {% else %} Guest {% endif %} <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">
+                                         {% if user.is_authenticated %} <a href="/change_password/"> Change Password</a>  
+                                      
+                                    </li>
+                                     <li>
+                                        <a tabindex="-1" href="/accounts/logout/">Logout</a>
+                                    </li>
+                                    
+                                    {% else %}
+                                    <li class="divider"></li>
+                                   
+                                    <li>
+                                        <a tabindex="-1" href="/accounts/login/">Login</a>
+                                    </li>
+				    
+				    
+				        <li>
+                                        <a tabindex="-1" href="/user_change_password/">Change Password</a>
+                                    </li>
+                                  {% endif %}
+                                    
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="/">Dashboard</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/users/" data-toggle="dropdown" class="dropdown-toggle"> Users<b class="caret"></b>
+
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                        <a href="/users/add/">Create New User <i class="icon-arrow-right"></i>
+
+                                        </a>
+                                       
+                            </li>
+			    
+			         <li>
+                                        <a href="/users/">User List 
+                                        </a>
+                                       
+                            </li>
+			     <li>
+			     <a href="/last_logins/">Last Login Times </a>
+                             </li>
+			         <li>
+			     <a href="/inactive_logins/">Inactive Logins </a>
+                             </li>
+			     
+			    
+			        <li>
+                                        <a href="/upload/">Mass Upload Users 
+
+                                        </a>
+                                       
+                            </li>
+			    
+			    </ul>
+			    
+			    
+			     <li class="dropdown">
+                                <a href="/groups/" data-toggle="dropdown" class="dropdown-toggle">Groups <b class="caret"></b>
+
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                        <a href="/groups/add">Add Group <i class="icon-arrow-right"></i>
+
+                                        </a>
+					</li>
+					
+					<li>
+                                        <a href="/groups/">Group  List</i>
+
+                                        </a>
+					</li>
+				
+					</ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+                        <li class="active">
+                            <a href="/"><i class="icon-chevron-right"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="/users/"><i class="icon-chevron-right"></i> Users</a>
+                        </li>
+                        <li>
+                            <a href="/groups/"><i class="icon-chevron-right"></i> Groups</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/span-->
+                <div class="span9" id="content">
+                 
+                    <div class="row-fluid">
+                      <div class="block"> 
+                      {% block content %}
+		      
+		    LDAP users are advised to change your password immediately after receiving the new credentials.
+		    
+	 <h1>   <a tabindex="-1" href="/user_change_password/">Change Password</a>
+
+                      </h1>
+                      
+                      
+                      
+                      {% endblock %}
+                      
+                      
+                      
+                      
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; Futurenet Technologies Pvt Ltd</p>
+		                <p>LDAP Manager/Single Signon, Multi-Site, Multi_sync </p>
+            </footer>
+        </div>
+        <!--/.fluid-container-->
+      
+        <script src="{{ STATIC_URL }}/bootstrap/js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}/vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        <script src="{{ STATIC_URL }}/assets/scripts.js"></script>
+        <script>
+        $(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        </script>
+    </body>
+
+</html>

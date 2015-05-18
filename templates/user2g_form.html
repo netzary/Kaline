@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block ajax %}
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<style>
+#sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0 0 2.5em; float: left; margin-right: 10px; }
+#sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+</style>
+<script>
+$(function() {
+$( "#sortable1, #sortable2" ).sortable({
+connectWith: ".connectedSortable"
+}).enableSelection();
+});
+</script>
+{% endblock %}
+
+{% block content %}
+
+<h2> Do add Remove users from this Group</h2>
+<ul id="sortable1" class="connectedSortable">
+    <li class="ui-state-default"> Users not in the Group </li>
+    {% for user in others %}
+<li class="ui-state-default"> {{ user }}     <input type='hidden' name='{{ user }}' value='{{ user }}'/></li>
+{% endfor %}
+</ul>
+
+<form id ="ex_form" enctype="multipart/form-data" method="post" action="/groups/users2groups/{{ group.name }}/">{% csrf_token %}
+
+
+
+<ul id="sortable2" class="connectedSortable">
+    <li class="ui-state-highlight"> Existing Users of the Group  </li>
+    {% for ex in existing %}
+
+<li class="ui-state-highlight">{{ ex }} <input type='hidden' name='{{ ex }}' value='{{ ex }}'/>   </li>
+{% endfor %}
+<div class="clear"></div>
+<input type="submit" />
+</form>
+</div>
+{% endblock %}
+

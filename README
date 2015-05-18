@@ -1,0 +1,2 @@
+Kaline is web application built in django to manage ldap.
+Kaline features include user addition, user deletion, user sync to slave servers and much more.

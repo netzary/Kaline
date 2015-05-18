@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load endless %} 
+
+{% if object_list %}
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>User Name</th>
+        <th>Last Login</th>
+      </tr>
+    </thead>
+	
+
+
+{% paginate object_list %}
+{% for object in object_list %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ object.user }}</td>
+      
+      <td> {{ object.time }} </a></td>
+         
+      </tr>
+      {% endfor %}
+      
+      
+
+  </table>
+
+{% show_pages %}
+{% else %}
+
+<h2> 
+There are no Inactive Users at this point.
+</h2>
+{% endif %}
+
+{% endblock %}
+

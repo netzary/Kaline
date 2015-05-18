@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load endless %} 
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Group Name Name</th>
+        <th>Delete</th>
+       <th>User Names</th>
+      <th>Add/Edit Users</th>
+      </tr>
+    </thead>
+    <tbody>
+{% paginate object_list %}	
+{% for object in object_list %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ object.name }}</td>
+      
+      <td><a href ="/groups/delete/{{ object.gid }}/">Delete </a></td>
+       <td>{{ object.get_usernames }}</td>
+      
+     <td><a href ="/groups/addusers/{{ object.name }}/"> Edit</a> </a></td>
+         
+      </tr>
+      {% endfor %}
+      
+      
+        </tbody>
+  </table>
+
+{% show_pages %}
+{% endblock %}

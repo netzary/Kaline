@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h3>Terms and conditions of use</h3>
+
+<p>This site is run and maintained by Szubha  on behalf of Szubha News and Media Ltd (Szubha).<br /><br /> Use of this site is limited to individuals who must be at least 18 years old and is intended for adult Members to communicate with each other online.<br /><br /> We do not accept profiles from married Members who are seeking an affair, or from Members who wish to use the site for commercial purposes.<br /><br /> By ticking the box next to the "I have read the terms and conditions of membership and the privacy policy  and agree with the content. I confirm that I am over 18 years of age" text on the Member Join Page, and clicking the 'Next' button, you accept and agree to the terms and conditions detailed on the web site. Every time you access this service you confirm your agreement with the Terms and Conditions.<br /><br /> The Terms and Conditions are personal to you. You may not assign your rights or obligations to anyone. If any provision in these Terms and Conditions is invalid or unenforceable under applicable law, such provision will be inapplicable, but the remaining provisions of this agreement will continue in full force and effect.<br /><br /> You agree to indemnify and hold harmless The Company, its officers, directors, employees, agents, affiliates, partner sites and third parties, from any loss, claim or damage, including reasonable attorney's fees, arising out of or resulting from your use of this site. This includes any violation of the Terms and Conditions of this agreement or any action arising from the content that you publish on this site that infringes the intellectual property rights (which include without limitation copyright, trade secrets, trademark or patent) of any third party or content or communication that denigrates, libels or invades the privacy of any third party.</p>
+
+<h4>1. Parties</h4>
+<p>These terms and conditions cover the supply of services by Szubha Express Limited, Registered Office address, 7 Swallow Place, Sydney W1B 2AG, Tel +44 
+<p>You alone are responsible for any content or information you enter on your profile and any communication with other Members. The Company is not the publisher and only provides the channel for Members to publish and/or distribute their personal information.<br />
+<br />
+No responsibility is assumed by The Company for the publication of any Member's information, including pictures published by Members. While it is incumbent on the Member to decide on what information the Member wishes to make available to other Members or other Internet users, The Company reserves the right to exercise editorial control over profile and picture content.<br />
+<br />
+The Company does not verify the accuracy or truth of any information published by Members. Be careful in dealing with other Members.<br />
+<br />
+You may not publish offensive content, this includes content that contains offensive language, overtly sexually explicit content (including photographs), is unlawful, threatening, libelous, abusive, harmful, bigoted, racially offensive, obscene or harassing. Further you may not publish content that encourages behaviour that may constitute a criminal offence, result in civil liability or otherwise violate any applicable local, state, national or international law or regulation.<br />
+
+<br />
+Photographs: Public Profile - You may not publish explicit photographs on your publicly viewable profile, including photographs you only make visible to your favourites. Photographic content that is publicly viewable is further subject to the terms and condition noted on the photo upload page.<br />
+<br />
+Photographs: Private Photos - The content of your private photos may not contain illegal, inflammatory or grossly obscene material. It will be at the Company's sole discretion to delete content if so deemed. The Company does not warrant the suitability of a Member's private photos nor will we become involved in correspondence regarding their suitability.<br />
+<br />
+You may not publish content (including photographs) that directly or indirectly alludes to child pornography or attempts to solicit communication with or on behalf of any person under the age of 18.<br />
+<br />
+Whilst The Company reserves the right to delete or remove content deemed offensive by The Company, The Company does not guarantee that offensive material will be removed or deleted. Failure by The Company to remove or delete offensive content does not waive our right to remove or delete offensive content in subsequent or similar cases.<br />
+<br />
+You may not publish content that contains advertising or commercial messages. You may not send messages of a commercial nature to other Members via the site.<br />
+<br />
+You may not impersonate any other person or entity.<br />
+
+<br />
+You may not publish in your profile any personal contact information. This includes but is not restricted to, email addresses, telephone numbers, instant messaging contact details (e.g. ICQ numbers, etc) web site URLs, etc. Personal contact information will be removed.<br />
+<br />
+You may not solicit other Members' contact details or disclose your subscription status in your profile.<br />
+<br />
+By creating a profile you grant Szubha permission to publish your profile (including picture) on www.Szubha.com <br />
+<br />
+Your picture and extracts from your profile will only be used as a ‘featured profile’ for marketing purposes (on www.Szubha.co.uk and/or observer.co.uk ) if you have explicitly opted in to do so via the option opt ins on the Member join page.<br />
+<br />
+Your profile will only be published on Szubha partner websites, in The Szubha, Guide and/or Observer newspapers if you have explicitly opted in to do so via the option opt ins on the Member join page.<br />
+<br />
+The Company reserves the right to be able to use screenshots or similar images of pages featured throughout the Soulmates service, including the Member screen name and photo(s) and use these for general promotional purposes, for example, but not limited to, a corporate brochure, or presentation or screenshot / image on www.Szubhaexpress.com and Szubhaexpress.co.uk. By creating a profile you grant The Company permission to publish your profile in such a fashion.</p>
+
+<h4>3. Account and password details</h4>
+<p>The Member is solely responsible for maintaining the confidentiality of their Member name and password.</p>
+<h4>4. Copyrighted material</h4>
+<p>You may not post material belonging to a third party on the site without permission from them. This includes but is not limited to photographs, images and text. Should you believe that material belonging to a third party has been posted on the site you are requested to contact The Company with full details of the alleged copyright infringement including the Member username and your contact details.</p>
+<h4>5. Harassment and disputes</h4>
+<p>You may not harass any Member. You must agree to cease contacting any other Member who has requested you to cease. Should you wish you have the option to ‘block’ any Member by selecting the appropriate option on their profile. ‘Blocked’ Members will not be able to contact you via the site.<br />
+ <br />
+The Company will not become involved in any domestic or private disputes between Members and does not provide any arbitration or settlement services should a dispute arise between Members.<br />
+ <br />
+
+You alone are responsible for ensuring that your interaction with other Members is lawful. The Company advises you that there may be risks of dealing with Members acting under false pretences or with criminal intent. We recommend that you read our >Safe Dating Guide</a>.<br />
+ <br />
+The Company cannot control what happens between Members once they decide to meet in person, however should you encounter behaviour that may be deemed harmful to other Members you are requested to contact The Company with full details using our  contact form with as much detail as possible. All complaints are treated in confidence, and will be resolved by a senior member of our support team as quickly as possible. If deemed appropriate at the sole discretion of The Company, we may warn, suspend or delete a Member’s profile.<br />
+<br />
+If you need to report an attack, a missing person, or if you feel that your safety is at immediate risk, we advise you to contact the police immediately, and then let our Customer Support Team know using our eport abuse contact form.</p>
+<h4>6. Member communications</h4>
+
+<p>While you may exchange any information you wish in replies and subsequent messages, messages to Members who have not previously contacted you may not contain email addresses or other contact information. (Responses via our "OneLiner" service do not qualify as prior contact for these purposes.) The company does not review or censor other message content, but it reserves the right to remove contact details, or any content deemed to cause offence from introductory messages.<br />
+<br />
+You alone are responsible for ensuring that message content is appropriate. Further, you must ensure that you save any messages that you wish to keep since we cannot retrieve any messages deleted by you. <br />
+</p>
+<h4>7. Content visibility </h4>
+<p>Member profiles from this site may also be visible (where applicable) on other network sites operated by the Company. This substantially increases the reach of your profile and the chances of finding a successful match.</p>
+<h4>8. Content storage </h4>
+<p>The Company assumes no responsibility for the deletion of or failure to store your content, including profile details and photographs.</p>
+<h4>9. Member privacy</h4>
+<p>Save as set out in our <a href="/s/help/privacy.php">privacy policy</a>, The Company will not disclose any personal details supplied by Members that is not publicly displayed on the Member’s Profile (this includes the Member’s name, email address contact details, etc) without the Member’s prior written consent.</p>
+
+<h4>10. Membership, subscriptions and cancellations</h4>
+<p>You may register your profile for free and will have access to most of the service. Subscription charges are levied to gain full access to the service, including but not limited to the ability to send messages. Subscription is entirely voluntary and you may remain a free Member as long as you wish. <br />
+<br />
+The Company may change the Subscription pricing, options, renewal terms or Member services at any time. The Member may cancel their Membership and/or Subscription at any time. Subscription fees are not transferable from one Member profile to another.<br />
+<br />
+The Company may suspend or terminate the Subscription and/or Membership of any Member who violates these Terms and Conditions. <br />
+<br />
+The Company reserves the right not to accept or to suspend or remove from the site all or part of any profile or any other Member Content for any reason.<br />
+<br />
+Refunds on subscriptions for three months and over will be given at the discretion of the Company management. Refunds will not be given for 3 day or 1 month subscriptions.</p>
+<h4>11. Service provision</h4>
+
+<p>This service is provided on an "as-is" basis by The Company without warranty of any kind, either express or implied, including, without limitation, warranties of title and the implied warranties of merchantability and fitness for a particular purpose.</p>
+<h4>12. Modifications to terms and conditions</h4>
+<p>The Company may modify these Terms and Conditions from time to time in its sole discretion and/or to take account of new legislation, statutory instruments, Government Regulations, Licences, similar matters and for any other reason. Any such variation shall be published on this site.</p>
+<h4>13. Legal venue</h4>
+<p>This agreement will be governed by the laws of Australia and the parties hereby submit to the exclusive jurisdiction of the Australian courts.</p>
+<h4>14. Rights of third parties</h4>
+<p>A person who is not a party to this Agreement has no right under the Contracts (Rights of Third Parties) Act 1999 to rely upon or enforce any term of this Agreement but this does not affect any right or remedy of a third party which exists or is available apart from that Act.</p>
+<h4>15. Severability</h4>
+<p>If any provision in these Terms and Conditions is deemed to be invalid or unenforceable for any reason, the remaining provisions will continue in full force without being impaired or invalidated in any way.</p>
+
+<h4>16. Entire agreement</h4>
+<p>This agreement, which includes the rivacy policy</a>, constitutes the entire agreement between the parties pertaining to the subject matter hereof, and supersedes in their entirety any and all written or oral agreements previously existing between the parties with respect to such subject matter.</p>
+
+
+{% endblock %}
+

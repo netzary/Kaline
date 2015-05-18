@@ -1,0 +1,15 @@
+
+{% extends "base_admin.html" %}
+
+{% block title %}Registration complete{% endblock %}
+
+{% block content %}
+
+			
+	
+	<p><h2>Awesome. Now apply for a course<a href="/apply/"> Here .</h2></p>
+
+	
+
+
+{% endblock %}
